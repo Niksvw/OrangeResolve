@@ -1,0 +1,101 @@
+incident_id,title,description,resolution,severity
+INC0001,Authentication failure,Users unable to login to production banking application after patch update,Restart authentication services and validate SSO connectivity,P1
+INC0002,Database timeout,Production database connection timeout observed during peak traffic,Restart DB services and verify database connectivity,P1
+INC0003,Application unavailable,Users unable to access production application after deployment,Restart IIS and clear deployment cache,P1
+INC0004,Kubernetes pod crash,Pods entering CrashLoopBackOff after deployment,Increase pod memory and restart deployment,P1
+INC0005,VPN issue,Users unable to connect to VPN network,Restart VPN gateway services,P2
+INC0006,SSL certificate expired,HTTPS services inaccessible due to expired SSL certificate,Renew SSL certificate and restart web services,P1
+INC0007,Application slowness,Application response time increased drastically during business hours,Optimize DB queries and restart services,P2
+INC0008,Disk space full,Server disk utilization crossed threshold,Clean old logs and expand storage volume,P2
+INC0009,Jenkins pipeline failure,CI pipeline failed during production deployment,Fix pipeline script and rerun build,P2
+INC0010,Memory leak issue,Application consuming excessive memory on production server,Restart services and patch memory leak,P1
+INC0011,Windows service stopped,Critical Windows service stopped unexpectedly,Restart impacted Windows services,P2
+INC0012,Citrix connection issue,Users unable to connect through Citrix environment,Restart Citrix services and validate connectivity,P1
+INC0013,RDP connectivity failure,RDP connection to production server unavailable,Restart RDP services and verify firewall rules,P1
+INC0014,Load balancer issue,Load balancer not routing traffic properly,Restart load balancer and validate routing,P2
+INC0015,Service outage,Production services unavailable for all users,Restart impacted services and validate health,P1
+INC0016,API gateway failure,API gateway returning 502 bad gateway errors,Restart API gateway and validate endpoints,P1
+INC0017,Deployment rollback,Application deployment failed in production,Rollback deployment and validate application health,P1
+INC0018,Network latency issue,High latency observed between application and DB servers,Validate network routes and restart interfaces,P2
+INC0019,Oracle listener issue,Oracle listener not responding in production,Restart Oracle listener and validate DB services,P1
+INC0020,Pod autoscaling failure,Kubernetes autoscaling not triggering correctly,Restart autoscaler and validate metrics server,P2
+INC0021,Authentication service outage,SSO authentication failing for all users,Restart authentication services and validate tokens,P1
+INC0022,Server reboot required,Application server became unresponsive,Reboot affected server and validate services,P1
+INC0023,Storage threshold exceeded,Storage utilization exceeded critical threshold,Expand storage volume and clear unused files,P2
+INC0024,Firewall issue,Application traffic blocked by firewall,Update firewall rules and validate traffic,P2
+INC0025,Service account expired,Application service account credentials expired,Renew credentials and restart services,P1
+INC0026,Application crash,Application terminated unexpectedly after release,Restart application and verify deployment health,P1
+INC0027,DNS resolution failure,Application unable to resolve hostnames,Restart DNS services and flush DNS cache,P2
+INC0028,Queue processing issue,Message queue backlog increasing rapidly,Restart queue services and clear stuck messages,P2
+INC0029,High CPU utilization,Production server CPU usage above 95 percent,Kill high CPU processes and restart services,P2
+INC0030,Redis cache issue,Redis cache unavailable for application requests,Restart Redis services and validate cache,P2
+INC0031,Proxy server failure,Reverse proxy not forwarding requests,Restart Nginx proxy and validate routes,P1
+INC0032,Login issue,Users unable to login after deployment,Restart SSO services and validate AD connection,P1
+INC0033,Azure VM unavailable,Azure VM inaccessible from monitoring systems,Restart VM and validate connectivity,P1
+INC0034,Log service failure,Log aggregation service stopped unexpectedly,Restart logging services and validate ingestion,P2
+INC0035,Patch update failure,Security patch installation failed on server,Rerun patch update and validate services,P2
+INC0036,Certificate mismatch,SSL certificate hostname mismatch detected,Install correct SSL certificate and restart services,P1
+INC0037,Container image pull failure,Kubernetes unable to pull container image,Validate image registry and restart deployment,P2
+INC0038,Database deadlock,Application transactions stuck in DB deadlock,Kill blocking sessions and restart DB services,P1
+INC0039,SMTP failure,Application unable to send emails,Restart SMTP services and validate mail queue,P2
+INC0040,Session timeout issue,User sessions expiring unexpectedly,Update session timeout configuration,P3
+INC0041,Cloud storage issue,Application unable to access cloud storage,Validate storage credentials and restart services,P2
+INC0042,Monitoring alert,Application health alerts triggered continuously,Validate monitoring agents and restart services,P3
+INC0043,Configuration mismatch,Incorrect application config deployed in production,Update configuration and restart services,P2
+INC0044,Kafka broker failure,Kafka broker unavailable for message processing,Restart Kafka brokers and validate topics,P1
+INC0045,Production outage,Production services inaccessible for business users,Restart impacted services and validate dependencies,P1
+INC0046,Deployment validation issue,Deployment validation checks failed,Validate deployment artifacts and rerun deployment,P2
+INC0047,Inactive services,Background services not running after reboot,Start impacted services and validate health,P2
+INC0048,Web server issue,Web server returning 503 service unavailable,Restart IIS and validate application pools,P1
+INC0049,Application dependency failure,Dependent services unavailable for application,Restart dependent services and validate APIs,P1
+INC0050,Backup failure,Production backup job failed overnight,Rerun backup job and validate storage,P3
+INC0051,Authentication token expired,User authentication tokens expired unexpectedly,Clear token cache and restart authentication service,P1
+INC0052,OCI connectivity issue,Application unable to connect to OCI resources,Validate OCI network and restart impacted services,P2
+INC0053,Queue consumer stopped,Message queue consumers stopped processing,Start queue consumers and validate throughput,P2
+INC0054,Windows patch issue,Windows patch caused application instability,Rollback patch and restart services,P1
+INC0055,Health check failure,Load balancer health checks failing,Restart web services and validate endpoints,P2
+INC0056,Database replication lag,Database replication lag increased significantly,Restart replication service and validate sync,P2
+INC0057,LDAP connectivity issue,Application unable to connect to LDAP server,Restart LDAP services and validate connectivity,P1
+INC0058,High memory usage,Application memory usage exceeded threshold,Restart application and analyze heap usage,P2
+INC0059,File transfer failure,SFTP file transfers failing intermittently,Restart SFTP services and validate credentials,P2
+INC0060,Citrix session disconnect,Users disconnected from Citrix sessions,Restart Citrix services and validate brokers,P2
+INC0061,Service startup failure,Application services failed to start after reboot,Restart services manually and validate logs,P1
+INC0062,API timeout,API requests timing out during peak load,Scale API services and restart gateway,P2
+INC0063,Firewall port blocked,Application unable to connect over required port,Open firewall port and validate connectivity,P2
+INC0064,Database listener stopped,Database listener service stopped unexpectedly,Restart listener and validate connections,P1
+INC0065,Pod restart loop,Kubernetes pods restarting continuously,Check pod logs and increase memory limits,P1
+INC0066,Application thread deadlock,Application threads stuck in deadlock state,Restart application services and validate logs,P1
+INC0067,Storage mount issue,Application unable to access mounted storage,Remount storage and validate permissions,P2
+INC0068,Monitoring agent failure,Server monitoring agents stopped reporting,Restart monitoring agents and validate metrics,P3
+INC0069,CI/CD issue,CI/CD deployment pipeline failed unexpectedly,Validate Jenkins jobs and rerun pipeline,P2
+INC0070,Service degradation,Application performance degraded for multiple users,Restart impacted services and validate CPU usage,P2
+INC0071,Proxy timeout,Reverse proxy timing out for API requests,Increase timeout settings and restart proxy,P2
+INC0072,Token validation issue,Application unable to validate user tokens,Restart token validation services,P1
+INC0073,Server storage full,Server storage utilization reached 100 percent,Clean unused files and extend storage,P1
+INC0074,Email delivery issue,Business emails not delivered to users,Restart mail services and validate SMTP queue,P2
+INC0075,Application inaccessible,Application unavailable after patch update,Restart services and validate deployment health,P1
+INC0076,Kubernetes ingress failure,Ingress controller not routing requests,Restart ingress controller and validate configs,P2
+INC0077,Service health critical,Critical health alerts generated for services,Restart impacted services and validate health,P1
+INC0078,Application restart required,Application became unstable after configuration change,Restart application and verify logs,P2
+INC0079,Database failover issue,Database failover did not trigger correctly,Manually failover and validate DB cluster,P1
+INC0080,Cloud connectivity issue,Application unable to connect to cloud APIs,Restart connectivity services and validate routing,P2
+INC0081,Service dependency timeout,Dependent APIs timing out intermittently,Restart dependent services and validate APIs,P2
+INC0082,Authentication cache corruption,Authentication cache corrupted after restart,Clear cache and restart authentication services,P1
+INC0083,Websocket failure,Realtime websocket connections failing,Restart websocket services and validate endpoints,P2
+INC0084,Batch job failure,Nightly batch processing job failed,Rerun batch job and validate logs,P3
+INC0085,Production login failure,Business users unable to login to production app,Restart authentication services and validate AD,P1
+INC0086,Application deployment stuck,Deployment pipeline stuck during rollout,Abort deployment and rerun release,P2
+INC0087,DNS cache issue,Application resolving outdated DNS records,Flush DNS cache and restart DNS services,P2
+INC0088,Database connection saturation,Database connections exceeded configured limit,Restart DB pool and increase connection limit,P1
+INC0089,Service crash loop,Application services crashing repeatedly,Analyze logs and restart impacted services,P1
+INC0090,Network packet loss,High packet loss observed between servers,Restart network adapters and validate routing,P2
+INC0091,Load balancer disconnect,Load balancer dropping active connections,Restart load balancer and validate sessions,P2
+INC0092,OCI storage unavailable,Application unable to access OCI storage,Validate storage mount and restart services,P2
+INC0093,Authentication API down,Authentication APIs returning 500 errors,Restart auth APIs and validate tokens,P1
+INC0094,Database service unavailable,Primary database service unavailable,Restart DB services and validate failover,P1
+INC0095,Kubernetes service unavailable,Kubernetes services not reachable internally,Restart kube services and validate networking,P1
+INC0096,CPU spike,Application CPU usage spiked unexpectedly,Kill high CPU process and restart application,P2
+INC0097,Service port issue,Application service port not responding,Restart services and validate port bindings,P2
+INC0098,Backup storage issue,Backup storage inaccessible during backup job,Validate storage permissions and rerun backup,P3
+INC0099,Application session issue,Users getting logged out automatically,Update session configs and restart services,P3
+INC0100,Reverse proxy unavailable,Nginx reverse proxy unavailable after restart,Restart Nginx and validate upstream services,P1
